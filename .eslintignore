@@ -1,6 +1,7 @@
 bin/
 dist/
-dist-esm/
+dist-es6/
+dist-umd/
 coverage/
 dev/
 node_modules/

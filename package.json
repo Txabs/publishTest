@@ -10,13 +10,16 @@
   "private": false,
   "scripts": {
     "lint": "tsc --noEmit && eslint './**/*.{js,jsx,ts,tsx}'",
-    "prebuild": "rimraf dist && rimraf dist-esm",
-    "build": "tsc && tsc --module es6 --outDir dist-esm"
+    "prebuild": "rimraf dist && rimraf dist-es6 && rimraf dist-umd",
+    "build": "tsc && tsc --module es6 --outDir dist-es6 && webpack"
   },
   "devDependencies": {
     "eslint": "^8.13.0",
     "eslint-config-ts-mailonline": "^2.0.3",
     "rimraf": "^3.0.2",
-    "typescript": "^4.6.3"
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
   }
 }
