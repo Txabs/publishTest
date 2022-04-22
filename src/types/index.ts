@@ -1,0 +1,1 @@
+export type GreetFunc = (name: string) => string;

@@ -1,0 +1,22 @@
+{
+  "name": "publish-test",
+  "version": "1.0.0",
+  "description": "a simple test to test publishes to npmjs",
+  "main": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "repository": "git@github.com:Txabs/publishTest.git",
+  "author": "Txabs <lauteilatu@hotmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "tsc --noEmit && eslint './**/*.{js,jsx,ts,tsx}'",
+    "prebuild": "rimraf dist",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-ts-mailonline": "^2.0.3",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.3"
+  }
+}
