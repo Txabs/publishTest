@@ -1,0 +1,8 @@
+bin/
+dist/
+dist-esm/
+coverage/
+dev/
+node_modules/
+*.css.d.ts
+*.scss.d.ts

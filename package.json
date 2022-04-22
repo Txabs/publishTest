@@ -10,8 +10,8 @@
   "private": false,
   "scripts": {
     "lint": "tsc --noEmit && eslint './**/*.{js,jsx,ts,tsx}'",
-    "prebuild": "rimraf dist",
-    "build": "tsc"
+    "prebuild": "rimraf dist && rimraf dist-esm",
+    "build": "tsc && tsc --module es6 --outDir dist-esm"
   },
   "devDependencies": {
     "eslint": "^8.13.0",

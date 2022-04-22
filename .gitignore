@@ -7,6 +7,7 @@
 .vagrant/
 bin/
 dist/
+dist-esm/
 bower_components/
 coverage/
 dev/
