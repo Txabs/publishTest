@@ -1,6 +1,6 @@
 {
-  "name": "publish-test",
-  "version": "1.0.0",
+  "name": "txabox-publish-test",
+  "version": "1.0.0-test.0",
   "description": "a simple test to test publishes to npmjs",
   "main": "./dist-commonjs/src/index.js",
   "types": "./dist-commonjs/src/types/index.d.ts",
