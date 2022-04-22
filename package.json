@@ -9,9 +9,12 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "build": "tsc && tsc --module es6 --outDir dist-es6 && webpack",
     "lint": "tsc --noEmit && eslint './**/*.{js,jsx,ts,tsx}'",
     "prebuild": "rimraf dist-commonjs && rimraf dist-es6 && rimraf dist-umd",
-    "build": "tsc && tsc --module es6 --outDir dist-es6 && webpack"
+    "precommit": "yarn run lint && yarn run test",
+    "prepush": "yarn run test",
+    "test": "echo 'NO TESTS IMPLEMENTED YET'"
   },
   "devDependencies": {
     "eslint": "^8.13.0",
