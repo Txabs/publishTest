@@ -2,15 +2,15 @@
   "name": "publish-test",
   "version": "1.0.0",
   "description": "a simple test to test publishes to npmjs",
-  "main": "./dist/index.js",
-  "types": "./dist/types/index.d.ts",
+  "main": "./dist-commonjs/src/index.js",
+  "types": "./dist-commonjs/src/types/index.d.ts",
   "repository": "git@github.com:Txabs/publishTest.git",
   "author": "Txabs <lauteilatu@hotmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
     "lint": "tsc --noEmit && eslint './**/*.{js,jsx,ts,tsx}'",
-    "prebuild": "rimraf dist && rimraf dist-es6 && rimraf dist-umd",
+    "prebuild": "rimraf dist-commonjs && rimraf dist-es6 && rimraf dist-umd",
     "build": "tsc && tsc --module es6 --outDir dist-es6 && webpack"
   },
   "devDependencies": {

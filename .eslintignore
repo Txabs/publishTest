@@ -1,5 +1,5 @@
 bin/
-dist/
+dist-commonjs/
 dist-es6/
 dist-umd/
 coverage/

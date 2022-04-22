@@ -6,7 +6,7 @@
 .scripts/
 .vagrant/
 bin/
-dist/
+dist-commonjs/
 dist-es6/
 dist-umd/
 bower_components/
